@@ -12,7 +12,6 @@ const uploaderStore = useUploaderStore();
 
 const showModal = ref(false);
 
-
 const file = ref(null);
 const previewImage = ref('');
 
@@ -69,7 +68,7 @@ onMounted(async () => {
             :key="category.id"
             :value="category.id"
           >
-            {{ category.name }}
+            {{ category.descricao }}
           </option>
         </select>
         <button class="btn-icon" @click="showModal = !showModal">+</button>

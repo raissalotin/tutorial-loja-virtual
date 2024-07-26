@@ -7,6 +7,6 @@ services:
       - SECRET_KEY=rt*(76hw&i*k2h*qcdiv8!qrhh^9$^t+-!8tu^&x937o^7h=o2
       - DEBUG=True #  possible values are: True, False
       - PASSAGE_APP_ID=dDl5WbrU1st3EnyNXlRhdQxL
-      - PASSAGE_API_KEY=lAOmD9QgAE.mACbJtxjgbAMjfvxDxdSowhRdWZ3YokoRw18LuZGqgP0JmRaqMhn50tFNeKnSMv1
+      - PASSAGE_API_KEY=7bOHxiFCup.bpuFgaMOEKf027XXViOHqNWR1M7NUM1cgCUnEPbhw3o7jsOb05MbgDVfZrHEBnaX
     ports:
       - 8000:8000
