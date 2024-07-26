@@ -72,6 +72,7 @@ onMounted(async () => {
           </option>
         </select>
         <button class="btn-icon" @click="showModal = !showModal">+</button>
+      
       </div>
     </div>
     <div class="row-form">

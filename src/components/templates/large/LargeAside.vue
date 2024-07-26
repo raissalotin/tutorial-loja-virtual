@@ -21,6 +21,13 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login
       </router-link>
+      <router-link to="/marcas">
+        <i class="icon mdi mdi-palette" /> Marcas
+      </router-link>
+      <router-link to="/acessorios">
+        <i class="icon mdi mdi-palette" /> Acessorios
+      </router-link>
+    
     </div>
   </div>
   <logo-title />
