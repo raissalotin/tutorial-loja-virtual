@@ -1,15 +1,16 @@
 import axios from "axios";
+
 export default class MarcasApi {
   async buscarTodasAsMarcas() {
     const { data } = await axios.get("/marcas/");
     return data.results;
   }
-  async adicionarMarca(marcas) {
-    const { data } = await axios.post("/marcas/", marcas);
+  async adicionarMarca(marca) {
+    const { data } = await axios.post("/marcas/", marca);
     return data.results;
   }
-  async atualizarMarca(marcas) {
-    const { data } = await axios.put(`/marcas/${marcas.id}/`, marcas);
+  async atualizarMarca(marca) {
+    const { data } = await axios.put(`/marcas/${marca.id}/`, marca);
     return data.results;
   }
   async excluirMarca(id) {

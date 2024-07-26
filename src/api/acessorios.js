@@ -1,15 +1,15 @@
 import axios from "axios";
-export default class CategoriasApi {
+export default class AcessoriosApi {
   async buscarTodosOsAcessorios() {
     const { data } = await axios.get("/acessorios/");
     return data.results;
   }
-  async adicionarAcessorio(acessorios) {
-    const { data } = await axios.post("/acessorios/", acessorios);
+  async adicionarAcessorio(acessorio) {
+    const { data } = await axios.post("/acessorios/", acessorio);
     return data.results;
   }
-  async atualizarAcessorio(acessorios) {
-    const { data } = await axios.put(`/acessorios/${acessorios.id}/`, acessorios);
+  async atualizarAcessorio(acessorio) {
+    const { data } = await axios.put(`/acessorios/${acessorio.id}/`, acessorio);
     return data.results;
   }
   async excluirAcessorio(id) {
