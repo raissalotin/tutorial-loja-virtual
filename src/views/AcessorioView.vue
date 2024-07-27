@@ -41,8 +41,10 @@ async function excluir(id) {
 
   <div class="form">
     <input type="text" v-model="acessorio.descricao" placeholder="Descrição" />
+    <div class="button-container">
     <button @click="salvar" class="save">Salvar</button>
     <button @click="limpar" class="clean">Limpar</button>
+  </div>
   </div>
   <div class="list">
     <li v-for="acessorio in acessorios" :key="acessorio.id">
@@ -63,25 +65,54 @@ async function excluir(id) {
   border-bottom: 2px solid #333;
   padding-bottom: 10px;
   margin-top: 0;
+  text-align: center;
 }
 .form {
   display: flex;
-  justify-items: center;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  gap: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0px auto 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form input[type="text"] {
+  width: 80%;
+  max-width: 370px;
   padding: 10px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
   color: #333;
+  background-color: #f9f9f9;
+}
+.form button {
+  padding: 6px 12px;
   border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #007BFF;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+.form button:hover {
+  background-color: #0056b3;
+}
 
+.form button:active {
+  background-color: #004494;
+}
+.button-container {
+  display: flex;
+  gap: 10px; 
+  justify-content: center;
 }
 .list {
  justify-content: center;

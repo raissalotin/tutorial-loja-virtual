@@ -11,4 +11,16 @@ import '@passageidentity/passage-elements/passage-auth';
   </div>
 </template>
 
-<style></style>
+<style scoped>
+h1{
+text-align: center;
+}
+.authContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+</style>
